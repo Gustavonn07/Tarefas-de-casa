@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 18px;
+    background-color: #ab226d;
+    position: relative;
+    animation: logo 8s forwards 2s;
+}
+.logo .maiorq{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%) rotate(45deg);
+    animation: boca 1s forwards 8s;
+}
+.logo .maiorq::after,
+.logo .maiorq::before{
+    content: "";
+    width: 30px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logo .maiorq::before{
+    width: 8px;
+    height: 30px;
+    left: initial;
+    right: 0;
+}
+.logo .underline1{
+    width: 25px;
+    height: 7px;
+    background-color: white;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+.logo .underline2{
+    width: 25px;
+    height: 7px;
+    background-color: white;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    animation: olho 1s forwards 6s;
+}
+
+@keyframes logo {
+    0% {
+        transform: 0;
+    }
+
+    25% {
+        transform: scale(2) rotate(270deg);
+    }
+
+    50% {
+        transform: scale(1.5) rotate(270deg);
+    }
+
+    100% {
+        transform: scale(2) rotate(270deg);
+    }
+}
+
+@keyframes olho{
+    0% {
+        transform: 0;
+    }
+
+    100% {
+        transform: rotate(360deg) translateY(-30px) ;
+    }
+}
+
+@keyframes boca{
+    0% {
+        transform: 0;
+    }
+
+    100% {
+        transform: rotate(225deg) translateY(45%) translateX(20%);
+    }
+}
