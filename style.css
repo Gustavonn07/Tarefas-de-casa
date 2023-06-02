@@ -1,105 +1,94 @@
 *{
+    border: 0;
     margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
 
-.logo{
-    width: 100px;
-    height: 100px;
-    border-radius: 18px;
-    background-color: #ab226d;
-    position: relative;
-    animation: logo 8s forwards 2s;
+#logo{
+    z-index: 2;
+    width: 16vw;
 }
-.logo .maiorq{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%) rotate(45deg);
-    animation: boca 1s forwards 8s;
-}
-.logo .maiorq::after,
-.logo .maiorq::before{
+
+body::before{
     content: "";
-    width: 30px;
-    height: 8px;
-    background-color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-}
-.logo .maiorq::before{
-    width: 8px;
-    height: 30px;
-    left: initial;
-    right: 0;
-}
-.logo .underline1{
-    width: 25px;
-    height: 7px;
-    background-color: white;
-    position: absolute;
-    bottom: 30px;
-    right: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #00000077; 
+    z-index: 1;
 }
 
-.logo .underline2{
-    width: 25px;
-    height: 7px;
-    background-color: white;
-    position: absolute;
-    bottom: 30px;
-    right: 20px;
-    animation: olho 1s forwards 6s;
+#login{
+    height: 80vh;
+    z-index: 99;
+    margin-top: 10vh;
+    width: 30vw;
 }
 
-@keyframes logo {
-    0% {
-        transform: 0;
-    }
-
-    25% {
-        transform: scale(2) rotate(270deg);
-    }
-
-    50% {
-        transform: scale(1.5) rotate(270deg);
-    }
-
-    100% {
-        transform: scale(2) rotate(270deg);
-    }
+#background{
+    padding: 50px;
+    background-color: #000000bd;
 }
 
-@keyframes olho{
-    0% {
-        transform: 0;
-    }
-
-    100% {
-        transform: rotate(360deg) translateY(-30px) ;
-    }
+input{
+    height: 8vh;
+    background-color: #343434;
+    border-bottom: 3px solid #ea7b19;
+    transition-duration: 90ms;
+    font-size: 13pt;
 }
 
-@keyframes boca{
-    0% {
-        transform: 0;
-    }
+input:focus:not(#check){
+    transition-duration: 90ms;
+    outline: 2px solid #ea7b19;
+}
 
-    100% {
-        transform: rotate(225deg) translateY(45%) translateX(20%);
-    }
+button{
+    height: 7vh;
+    background-color: #ff0000;
+    transition-duration: 200ms;
+}
+
+button:hover{
+    background-color: #860000;
+    color: #b2b2b2;
+    transition-duration: 200ms;
+}
+
+#check{
+    width: 18px;
+}
+
+p{
+    color: #808080;
+}
+
+#ajuda{
+    color: #989898;
+    text-decoration: none;
+    transition-duration: 200ms;
+}
+
+#ajuda:hover{
+    transition-duration: 200ms;
+    color: #dedede;
+}
+
+.textojavs{
+    font-size: 11pt;
+    color: #ea7b19;
 }
