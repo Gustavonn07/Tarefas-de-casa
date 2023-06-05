@@ -9,7 +9,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+.inicio{
     background-image: url(images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body{
     width: 16vw;
 }
 
-body::before{
+.inicio::before{
     content: "";
     position: fixed;
     top: 0;
@@ -42,6 +42,8 @@ body::before{
 #background{
     padding: 50px;
     background-color: #000000bd;
+    width: 30vw;
+    height: 82vh;
 }
 
 input{
@@ -89,6 +91,5 @@ p{
 }
 
 .textojavs{
-    font-size: 11pt;
     color: #ea7b19;
 }
