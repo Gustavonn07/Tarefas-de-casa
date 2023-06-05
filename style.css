@@ -39,6 +39,10 @@
     width: 30vw;
 }
 
+#backgroundmenor{
+    width: 50vw;
+}
+
 #background{
     padding: 50px;
     background-color: #000000bd;

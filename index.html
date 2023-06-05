@@ -12,7 +12,7 @@
 
 <body>
   
-  <div class="inicio h-100 w-100 position-fixed d-xl-flex d-lg-flex justify-content-center align-items-center d-md-none">
+  <div class="inicio h-100 w-100 position-fixed d-xl-flex d-lg-flex d-sm-none justify-content-center align-items-center d-md-none ">
     <img src="images/Netflix_2015_logo.svg.png" class="position-fixed fixed-top mt-xl-4  ms-xl-5 d-xl-block d-lg-none" alt="Netflix" id="logo">
     <img src="images/Netflix_2015_logo.svg.png" class="position-absolute top-0 mt-4 d-xl-none" alt="Netflix" id="logo">
     <div id="login">
@@ -44,7 +44,37 @@
     </div>
   </div>
 
-  
+  <div class="iniciomenor h-100 w-100 position-fixed d-xl-none d-lg-none d-md-flex d-sm-none justify-content-center align-items-center bg-black">
+    <img src="images/Netflix_2015_logo.svg.png" class="position-absolute top-0 mt-5" alt="Netflix" id="logo">
+
+    <div id="loginmenor" class="d-flex justify-content-center align-items-center">
+      <ul id="backgroundmenor" class="d-flex flex-column justify-content-start align-items-start">
+        <li style="font-size: 2.8vw;" class="fw-bold mb-3 position-relative start-0">Entrar</li>
+        <li class="d-flex flex-column align-self-center">
+            <input style="width: 48.5vw;" type="text" placeholder="Email ou número de telefone" class="align-self-center p-1 rounded-1" id="email">
+            <p style="font-size: 2vh;" class="textojavs">Informe um email ou número de telefone válido.</p>
+        </li>
+        <li class="d-flex flex-column align-self-center ">
+            <input style="width: 48.5vw;" type="text" placeholder="Senha" class="align-self-center p-1 rounded-1" id="senha">
+            <p style="font-size: 2vh;" class= "textojavs">A senha deve ter entre 4 e 60 caracteres.</p>
+        </li>
+        <li class="d-flex flex-column align-self-center mt-1">
+          <button style="width: 48.5vw;" class="align-self-center rounded-2 h5 fw-bolder">Entrar</button>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-2 align-items-end">
+              <input type="checkbox" style="width: 2vw;" id="check">
+              <p style="font-size: 2vw;" >Lembre-se de mim</p>
+            </div>
+            <div>
+              <a id="ajuda" style="font-size: 2vw;" href="#" class="pb-3">Precisa de ajuda?</a>
+            </div>
+          </div>
+        </li>
+        <li><p style="font-size: 2.1vw;" class=" mt-2">Novo por aqui? <a href="#" style="color: #ffffff; text-decoration: none;">Assine agora</a>.</p></li>
+        <li><p style="font-size: 1.8vw;">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#" style="color: #221cc6; text-decoration: none;">Saiba mais.</a></p></li>
+      </ul>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
