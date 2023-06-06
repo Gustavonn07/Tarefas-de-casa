@@ -5,29 +5,29 @@ Repositório para adicionar os trabalhos de casa do curso de fullstack da Digita
 
 <h1 align='center'>......-------==+==-------......</h1>
 
-<h4 align='center'>Unidade 1 (Introdução):</h4>
+<h3 align='center'>Unidade 1 (Introdução):</h3>
 
 - Nada
 
 <hr>
 
-<h4 align='center'>Unidade 2 (HTML e CSS):</h4>
+<h3 align='center'>Unidade 2 (HTML e CSS):</h3>
 
 - Scrum (Trabalho em grupo)
 
 <hr>
 
-<h4 align='center'>Unidade 3 (Git e Github):</h4>
+<h3 align='center'>Unidade 3 (Git e Github):</h3>
 
 - Dripstore (Trabalho em grupo)
 
 <hr>
 
-<h4 align='center'>Unidade 4 (HTML e CSS Avançado):</h4>
+<h3 align='center'>Unidade 4 (HTML e CSS Avançado):</h3>
 
 - Animação com a logo da Digital College (Individual)
 - Pagina de login da Netflix (Individual)
 
 <hr>
 
-<h4 align='center'>Unidade 5 (Introdução a Javascript):</h4>
+<h3 align='center'>Unidade 5 (Introdução a Javascript):</h3>
