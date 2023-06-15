@@ -25,6 +25,7 @@ Repositório para adicionar os trabalhos de casa do curso de fullstack da Digita
 
 <h3 align='center'>Unidade 4 (HTML e CSS Avançado):</h3>
 
+- Landpage com AOS (Individual)
 - Animação com a logo da Digital College (Individual)
 - Pagina de login da Netflix (Individual)
 
