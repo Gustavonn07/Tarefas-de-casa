@@ -1,0 +1,49 @@
+@media (min-width: 1025px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    label box-icon {
+        top: .6rem; //MUDA
+    }
+}
+
+@media (min-width: 886px) and (max-width: 1024px) {
+    html {
+        font-size: 52.5%;
+    }
+
+    label box-icon {
+        top: .6rem; //MUDA
+    }
+}
+
+@media (min-width: 700px) and (max-width: 885px) {
+    html {
+        font-size: 40.8%;
+    }
+
+    label box-icon {
+        top: .6rem; //MUDA
+    } 
+}
+
+@media (min-width: 500px) and (max-width: 701px) {
+    html {
+        font-size: 25%;
+    }
+
+    label box-icon {
+        top: -.6rem; //MUDA
+    }
+}
+
+@media (min-width: 425px) and (max-width: 501px) {
+    html {
+        font-size: 23%;
+    }
+
+    label box-icon {
+        top: -1rem; //MUDA
+    }
+}
