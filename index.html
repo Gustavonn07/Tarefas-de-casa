@@ -24,54 +24,67 @@
         <section id="equipes">
             <h3>
                 Equipes
-                    <button><box-icon name="plus"></box-icon>Criar Equipe</button>
+                    <button id="criar"><box-icon name="plus"></box-icon>Criar Equipe</button>
             </h3>
             <ul>
                 <li>
                     <h4>Nome da equipe</h4>
                     <div>
-                        <h2>00</h2>
-                        <button><box-icon name="plus"></box-icon>Add</button>
+                        <h2>00 <span>/ 00</span> </h2>
+                        <button><box-icon name="plus"></box-icon>Adicionar</button>
                     </div>
                 </li>
                 <li>
                     <h4>Nome da equipe</h4>
                     <div>
-                        <h2>00</h2>
-                        <button><box-icon name="plus"></box-icon>Add</button>
+                        <h2>00 <span>/ 00</span> </h2>
+                        <button><box-icon name="plus"></box-icon>Adicionar</button>
                     </div>
                 </li>
                 <li>
                     <h4>Nome da equipe</h4>
                     <div>
-                        <h2>00</h2>
-                        <button><box-icon name="plus"></box-icon>Add</button>
+                        <h2>00 <span>/ 00</span> </h2>
+                        <button><box-icon name="plus"></box-icon>Adicionar</button>
                     </div>
                 </li>
                 <li>
                     <h4>Nome da equipe</h4>
                     <div>
-                        <h2>00</h2>
-                        <button><box-icon name="plus"></box-icon>Add</button>
+                        <h2>00 <span>/ 00</span> </h2>
+                        <button><box-icon name="plus"></box-icon>Adicionar</button>
                     </div>
                 </li>
                 <li>
                     <h4>Nome da equipe</h4>
                     <div>
-                        <h2>00</h2>
-                        <button><box-icon name="plus"></box-icon>Add</button>
+                        <h2>00 <span>/ 00</span> </h2>
+                        <button><box-icon name="plus"></box-icon>Adicionar</button>
                     </div>
                 </li>
                 <li>
                     <h4>Nome da equipe</h4>
                     <div>
-                        <h2>00</h2>
-                        <button><box-icon name="plus"></box-icon>Add</button>
+                        <h2>00 <span>/ 00</span> </h2>
+                        <button><box-icon name="plus"></box-icon>Adicionar</button>
                     </div>
                 </li>
             </ul>
         </section>
     </main>
+
+    <div id="overlay"></div>
+
+    <div id="modal">
+        <form>
+            <h3>Criar equipe <box-icon id="fecharForm" name="x"></box-icon></h3>
+            <label for="equipe-nome">Nome</label>
+            <input type="text" name="equipe-nome" id="equipe-nome" placeholder="Digite um nome" required>
+            <label for="equipe-qtd">N° de Participantes</label>
+            <input type="number" name="equipe-qtd" id="equipe-qtd" min="1" required>
+            <button type="submit">Criar</button>
+        </form>
+    </div>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="js/script.js"></script>
