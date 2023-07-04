@@ -186,8 +186,63 @@ header .busca label box-icon:hover {
   visibility: visible;
   top: 50%;
 }
-#modal #fecharForm {
+#modal h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+#modal h3 #fecharForm {
   cursor: pointer;
+  fill: #fff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  transition: all 0.2s;
+  background-color: #282828;
+}
+#modal h3 #fecharForm:hover {
+  fill: #c61067;
+  transform: scale(1.1);
+}
+#modal label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+#modal input {
+  width: 100%;
+  height: 6rem;
+  background-color: #282828;
+  border-radius: 0.8rem;
+  padding-left: 1.8rem;
+  border: 0.3rem solid #282828;
+  transition: all 0.3s;
+  margin-bottom: 2rem;
+}
+#modal input:focus {
+  border-color: #c61067;
+}
+#modal button {
+  display: inline-block;
+  width: 50%;
+  height: 6rem;
+  background-color: transparent;
+  border-radius: 0.6rem;
+  border: 0.3rem solid #c61067;
+  padding: 1rem 1.6rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#modal button:hover {
+  background-color: #c61067;
 }
 
 #overlay {

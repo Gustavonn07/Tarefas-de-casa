@@ -19,7 +19,69 @@
         top: 50%;
     }
 
-    & #fecharForm {
+    & h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.6rem;
+
+        & #fecharForm {
+            cursor: pointer;
+            fill: $branco;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 2rem;
+            padding: .8rem;
+            transition: all .2s;
+            background-color: $fundoCinzaEscuro;
+        }
+
+        & #fecharForm:hover {
+            fill: $rosaDigital;
+            transform: scale(1.1);
+        }
+    }
+
+    & label {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: bold;
+        letter-spacing: .1rem;
+        margin-bottom: 1rem;
+    }
+
+    & input {
+        width: 100%;
+        height: 6rem;
+        background-color: $fundoCinzaEscuro;
+        border-radius: .8rem;
+        padding-left: 1.8rem;
+        border: .3rem solid $fundoCinzaEscuro;
+        transition: all .3s;
+        margin-bottom: 2rem;
+
+        &:focus {
+            border-color: $rosaDigital;
+        }
+    }
+
+    & button {
+        display: inline-block;
+        width: 50%;
+        height: 6rem;
+        background-color: transparent;
+        border-radius: .6rem;
+        border: .3rem solid $rosaDigital;
+        padding: 1rem 1.6rem;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+        font-weight: bold;
         cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $rosaDigital;
+        }
     }
 }
