@@ -65,6 +65,7 @@ header .busca label box-icon:hover {
 #equipes h3 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 1.8rem;
 }
 #equipes h3 #criar {
@@ -73,13 +74,13 @@ header .busca label box-icon:hover {
   gap: 1rem;
   background-color: transparent;
   border-radius: 0.5rem;
-  border: 0.4rem solid #c61067;
   padding: 1rem 1.6rem;
   text-transform: uppercase;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   font-weight: bold;
   transition: all 300ms;
+  border: 0.2rem solid #c61067;
   cursor: pointer;
 }
 #equipes h3 #criar box-icon {
@@ -88,12 +89,26 @@ header .busca label box-icon:hover {
 }
 #equipes h3 #criar:hover {
   background-color: #c61067;
+  transform: scale(1.05) translateY(-1rem);
+}
+#equipes h3 #criar:active {
+  transform: scale(1.05) translateY(0.1rem);
 }
 #equipes ul {
   margin-top: 2.6rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1.6rem;
+}
+#equipes ul .listaVazia {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  font-size: 7rem;
+  color: #555555;
+  height: 55rem;
+  align-items: center;
+  justify-content: center;
 }
 #equipes ul li {
   width: calc(20% - 1.3rem);
@@ -132,14 +147,19 @@ header .busca label box-icon:hover {
   text-transform: uppercase;
   font-weight: bold;
 }
+#equipes ul li div .acoes {
+  display: flex;
+  width: 12rem;
+  flex-direction: row;
+  justify-content: center;
+}
 #equipes ul li div button {
   display: flex;
   align-items: center;
   gap: 1rem;
   background-color: transparent;
   border-radius: 0.5rem;
-  border: 0.4rem solid #c61067;
-  padding: 0.2rem 1rem;
+  border: 0.3rem solid #c61067;
   text-transform: uppercase;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
@@ -147,6 +167,7 @@ header .busca label box-icon:hover {
   transition: all 300ms;
   cursor: pointer;
   text-align: center;
+  padding: 1rem;
 }
 #equipes ul li div button:hover {
   background-color: #c61067;
@@ -154,6 +175,12 @@ header .busca label box-icon:hover {
 #equipes ul li div button box-icon {
   fill: #fff;
   cursor: pointer;
+  text-align: center;
+}
+#equipes ul li div button .trash {
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 ::-webkit-scrollbar {
@@ -420,7 +447,7 @@ header .busca label box-icon:hover {
 }
 @media (min-width: 700px) and (max-width: 885px) {
   html {
-    font-size: 34.8%;
+    font-size: 27.8%;
   }
   label box-icon {
     top: 0.6rem;

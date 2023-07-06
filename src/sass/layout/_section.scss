@@ -4,6 +4,7 @@
     & h3 {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         font-size: 1.8rem;
 
         & #criar {
@@ -12,13 +13,13 @@
             gap: 1rem;
             background-color: transparent;
             border-radius: .5rem;
-            border: .4rem solid $rosaDigital;
             padding: 1rem 1.6rem;
             text-transform: uppercase;
             font-size: 1.2rem;
             letter-spacing: 0.1rem;
             font-weight: bold;
             transition: all 300ms;
+            border: .2rem solid $rosaDigital;
             cursor: pointer;
 
             & box-icon {
@@ -28,6 +29,11 @@
 
             &:hover {
                 background-color: $rosaDigital;
+                transform: scale(1.05) translateY(-1rem);
+            }
+
+            &:active {
+                transform: scale(1.05) translateY(.1rem);
             }
             
         }
@@ -38,6 +44,17 @@
         display: flex;
         flex-wrap: wrap;
         gap: 1.6rem;
+
+        & .listaVazia {
+            display: flex;
+            width: 100%;
+            text-align: center;
+            font-size: 7rem;
+            color: $fundoCinzaMaisClaro;
+            height: 55rem;
+            align-items: center;
+            justify-content: center;
+        }
 
         & li {
             width: calc(20% - 1.3rem);
@@ -78,6 +95,13 @@
                         font-weight: bold;
                     }
                 }
+
+                & .acoes {
+                    display: flex;
+                    width: 12rem;
+                    flex-direction: row;
+                    justify-content: center;
+                }
                 
                 & button {
                     display: flex;
@@ -85,8 +109,7 @@
                     gap: 1rem;
                     background-color: transparent;
                     border-radius: .5rem;
-                    border: .4rem solid $rosaDigital;
-                    padding: .2rem 1rem;
+                    border: .3rem solid $rosaDigital;
                     text-transform: uppercase;
                     font-size: 1.2rem;
                     letter-spacing: .1rem;
@@ -94,6 +117,7 @@
                     transition: all 300ms;
                     cursor: pointer;
                     text-align: center;
+                    padding: 1rem;
 
                     &:hover {
                         background-color: $rosaDigital;
@@ -102,6 +126,14 @@
                     & box-icon {
                         fill: #fff;
                         cursor: pointer;
+                        text-align: center;
+                        
+                    }
+
+                    .trash{
+                        text-align: center;
+                        width: 2.5rem;
+                        height: 2.5rem;
                     }
                 }
             }
