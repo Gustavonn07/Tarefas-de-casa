@@ -1,111 +1,28 @@
-criar.onclick = function() {
-    overlay.classList.add('active');
-    modal.classList.add('active');
+/*
+
+    Na Digital College os professores que possuem carro tem direito a um cartão
+    estacionamento para guardarem seus veículos, quando um professor passa pela cancela, a
+    mesma registra o horário em que ele entrou ou saiu, o gerente quer saber em que período
+    do dia os professores mais acessam o estacionamento, sabendo disso crie uma função que
+    identifique pelo horário em que período do dia(Manhã(05:00 as 11:59), Tarde(12:00 as
+    17:59), ou Noite(18:00 as 04:59)) aconteceu o acesso, execute essa função 10 vezes com
+    horários diferentes, e escreva na tela a quantidade de acessos de cada período;
+
+*/
+
+let manha = 0;
+let tarde = 0;
+let noite = 0;
+
+function gerarNumAleatorio() {
+    return Math.random() * 24;
 };
 
-overlay.onclick = function() {
-    overlay.classList.remove('active');
-    modal.classList.remove('active');
-};
+for (let i = 0; i < 10; i++) {
+    let hora = gerarNumAleatorio();
+    hora >= 5 && hora < 12? manha++ : hora >= 12 && hora < 18? tarde++ : noite++;
+}
 
-fecharForm.onclick = function() {
-    overlay.classList.remove('active');
-    modal.classList.remove('active');
-};
-
-let equipes = JSON.parse(localStorage.getItem('equipes')) || [];
-
-listarEquipes()
-
-function listarEquipes() {
-    listaDeEquipes.innerHTML = '';
-
-    if(equipes.length > 0) {
-
-        for(let i = 0; i < equipes.length; i++) {
-            listaDeEquipes.innerHTML += `
-                <li>
-                    <h4>${equipes[i].nome}</h4>
-                    <div>
-                        <h2>${equipes[i].participante.length} <span>/ ${equipes[i].qtdMax}</span></h2>
-                        <div class='acoes'>
-                            <button>
-                                <box-icon name="plus"></box-icon>Adicionar
-                            </button>
-    
-                            <button class='trash' onclick='deletarEquipe(${i})'>
-                                <box-icon name='trash'><box-icon>
-                            </button>
-                        </div>
-                    </div>
-                </li>
-            `;
-        }
-    } else {
-        listaDeEquipes.innerHTML = `
-            <li class='listaVazia'>Crie sua primeira equipe!</li>
-        `
-    }
-};
-
-function criarEquipe() {
-    // A linha de baixo serve para não usar o padrão do formulário (action):
-    event.preventDefault();
-
-    let equipeNome = document.querySelector('#equipe-nome');
-    let equipeQtd = document.querySelector('#equipe-qtd');
-
-    equipes.push(
-        {
-            nome: equipeNome.value,
-            qtdMax: equipeQtd.value,
-            participante: []
-        },
-    );
-    
-    // Salvar no storage
-    if(!localStorage.getItem('equipes')) {
-
-        // JSON é a forma de se comunicar entre aplicações.
-        // Todas as linguagens entendem JSON (Tradutor de linguagens)
-        localStorage.setItem('equipes', JSON.stringify(equipes));
-    } else {
-
-        // Stringify --> Transforma javascript em texto
-        // Parse --> Transforma texto em javascrtipt
-        let equipesSalvas = JSON.parse(localStorage.getItem('equipes'));
-        equipesSalvas.push(
-            {
-                nome: equipeNome.value,
-                qtdMax: equipeQtd.value,
-                participante: []
-            }
-        );
-        localStorage.setItem('equipes', JSON.stringify(equipesSalvas));
-    }
-
-
-    // Resetar form depois de criar um:
-    formCriar.reset();
-
-    overlay.classList.remove('active');
-    modal.classList.remove('active');
-    listarEquipes();
-};
-
-function deletarEquipe(pos) {
-    let equipesRestantes = [];
-    let equipesSalvas = JSON.parse(localStorage.getItem('equipes'));
-    for (let i = 0; i < equipes.length; i++) {
-        if(i != pos) {
-            equipesRestantes.push(equipes[i]);
-        };
-    };
-
-    equipesSalvas = [];
-    equipesSalvas = equipesRestantes;
-    equipes= [];
-    equipes = equipesRestantes;
-    localStorage.setItem('equipes', JSON.stringify(equipesSalvas));
-    listarEquipes();
-};
+console.log('Manhã: ' + manha);
+console.log('Tarde: ' + tarde);
+console.log('Noite: ' + noite);
