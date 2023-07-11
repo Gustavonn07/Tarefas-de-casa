@@ -31,6 +31,12 @@ Repositório para adicionar os trabalhos de casa do curso de fullstack da Digita
 
 <hr>
 
+<h3 align='center'>Unidade 5 (HTML e CSS Avançado):</h3>
+
+- Exercício com functions (Individual)
+
+<hr>
+
 <h3 align='center'>Unidade 5 (Introdução a Javascript):</h3>
 
 - Responsividade Digital Teams (Individual)
