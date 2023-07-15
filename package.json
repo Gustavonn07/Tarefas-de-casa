@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:tailwind": "npx tailwindcss build src/css/input.css -o src/css/output.css",
-    "watch:sass": "sass --watch src/sass/main.scss:src/css/input.css"
+    "watch:sass": "sass --watch src/sass/main.scss:src/css/output.css"
   },
   "author": "Gustavonn07",
   "license": "ISC",

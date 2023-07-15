@@ -1,0 +1,5 @@
+Lembrar de dar watch no input com sass e depois buildar com o tailwind para juntar os arquivos.
+
+object.keys() --> Retorna uma array com as keys dos objetos.
+object.values() --> Retorna uma array com os valores das keys dos objetos.
+object.entries() --> Retorna uma array com as keys e valores dos objetos.
