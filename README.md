@@ -40,5 +40,6 @@ Repositório para adicionar os trabalhos de casa do curso de fullstack da Digita
 <h3 align='center'>Unidade 6 (Javascript):</h3>
 
 - Exercício com functions (Individual)
+- Apresentação em slides (Invididual)
 
 <hr>
