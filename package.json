@@ -1,0 +1,14 @@
+{
+  "name": "tarefas-de-casa",
+  "version": "1.0.0",
+  "description": "tarefas de casa da turma fs19",
+  "main": "index.js",
+  "scripts": {
+    "build:tailwind": "npx tailwindcss build src/css/input.css -o src/css/output.css"
+  },
+  "author": "Gustavonn07",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
