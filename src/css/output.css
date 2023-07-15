@@ -7,18 +7,32 @@
 #slide1 {
   background-image: linear-gradient(80deg, var(--cor-cinza-media-opacidade-1) 70%, transparent 70%), url(../images/banner.webp);
 }
-#slide1 #start {
-  color: var(--cor-primaria-clara);
-  border-color: var(--cor-primaria-clara);
-  transition: all 0.1s;
+
+#slide2 {
+  background-color: var(--cor-cinza-clara-media);
+  overflow: hidden;
 }
-#slide1 #start:hover {
-  color: var(--cor-branca);
-  background-color: var(--cor-primaria-clara);
-  transform: translateY(-8px) scale(1.05);
+#slide2__conteudo {
+  background-color: var(--cor-primaria-escura);
+  margin-right: -40px;
 }
-#slide1 #start:active {
-  transform: translateY(-2px) scale(1);
+#slide2__conteudo .slide2__item::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/SVG/chevron-thin-right.svg);
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  #slide2__conteudo .slide2__item::before {
+    background-color: var(--cor-primaria-clara);
+    -webkit-mask-image: url(../images/SVG/chevron-thin-right.svg);
+    -webkit-mask-size: cover;
+    mask-image: url(../images/SVG/chevron-thin-right.svg);
+    mask-size: cover;
+    background-image: none;
+  }
 }
 
 :root {
@@ -26,10 +40,42 @@
   --cor-primaria-escura: #940c4e;
   --cor-primaria-clara: #f0147e;
   --cor-cinza-clara: #282525;
+  --cor-cinza-clara-media: #1b1919;
   --cor-cinza-media: #111010;
   --cor-cinza-escura: #070707;
   --cor-branca: #fff;
   --cor-cinza-media-opacidade-1: #111010f8;
+  --sombra-1: #00000090;
+}
+
+.btn {
+  color: var(--cor-primaria-clara);
+  border-color: var(--cor-primaria-clara);
+  transition: all 0.1s;
+}
+.btn:hover {
+  color: var(--cor-branca);
+  background-color: var(--cor-primaria-clara);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 15px var(--sombra-1);
+}
+.btn:active {
+  transform: translateY(-2px) scale(1);
+}
+
+.btn2 {
+  color: var(--cor-branca);
+  background-color: var(--cor-primaria);
+  transition: all 0.1s;
+}
+.btn2:hover {
+  color: var(--cor-branca);
+  background-color: var(--cor-primaria-clara);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 15px var(--sombra-1);
+}
+.btn2:active {
+  transform: translateY(-2px) scale(1);
 }
 
 /*# sourceMappingURL=output.css.map */

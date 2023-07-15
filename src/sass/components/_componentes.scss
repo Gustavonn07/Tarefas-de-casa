@@ -1,0 +1,33 @@
+.btn {
+    color: var(--cor-primaria-clara);
+    border-color: var(--cor-primaria-clara);
+    transition: all .1s;
+
+    &:hover {
+        color: var(--cor-branca);
+        background-color: var(--cor-primaria-clara);
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0 10px 15px var(--sombra-1);
+    }
+
+    &:active {
+        transform: translateY(-2px) scale(1);
+    }
+}
+
+.btn2 {
+    color: var(--cor-branca);
+    background-color: var(--cor-primaria);
+    transition: all .1s;
+
+    &:hover {
+        color: var(--cor-branca);
+        background-color: var(--cor-primaria-clara);
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0 10px 15px var(--sombra-1);
+    }
+
+    &:active {
+        transform: translateY(-2px) scale(1);
+    }
+}

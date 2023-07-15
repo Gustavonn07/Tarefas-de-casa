@@ -8,20 +8,34 @@
                                      var(--cor-cinza-media-opacidade-1) 70%,
                                      transparent 70%),
                                      url(../images/banner.webp);
+}
 
-    & #start {
-        color: var(--cor-primaria-clara);
-        border-color: var(--cor-primaria-clara);
-        transition: all .1s;
+#slide2 {
+    background-color: var(--cor-cinza-clara-media);
+    overflow: hidden;
 
-        &:hover {
-            color: var(--cor-branca);
-            background-color: var(--cor-primaria-clara);
-            transform: translateY(-8px) scale(1.05);
-        }
+    &__conteudo {
+        background-color: var(--cor-primaria-escura);
+        margin-right: -40px;
 
-        &:active {
-            transform: translateY(-2px) scale(1);
+        & .slide2__item::before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+    
+            background-image: url(../images/SVG/chevron-thin-right.svg);
+            background-size: cover;
+    
+            @supports(-webkit-mask-image: url()) or (mask-image: url()){
+                background-color: var(--cor-primaria-clara);
+                -webkit-mask-image: url(../images/SVG/chevron-thin-right.svg);
+                -webkit-mask-size: cover;
+                mask-image: url(../images/SVG/chevron-thin-right.svg);
+                mask-size: cover;
+    
+                background-image: none;
+            } 
         }
     }
 }
