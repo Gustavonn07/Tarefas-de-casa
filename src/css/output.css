@@ -55,6 +55,9 @@ section {
   background-color: var(--cor-cinza-clara);
 }
 
+#slide5 .slide5__item {
+  background-color: var(--cor-cinza-clara);
+}
 :root {
   --cor-primaria: #C61067;
   --cor-primaria-escura: #940c4e;

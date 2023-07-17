@@ -74,3 +74,14 @@ section {
         }
     }
 }
+
+#slide5 {
+
+    & .slide5__item {
+        background-color: var(--cor-cinza-clara);
+
+        &:hover {
+            
+        }
+    }
+}
