@@ -79,9 +79,33 @@ section {
 
     & .slide5__item {
         background-color: var(--cor-cinza-clara);
+        transition: all .2s;
 
         &:hover {
-            
+            transform: scale(1.08) translateY(-5px);
+            background-color: var(--cor-primaria-clara);
+            box-shadow: 0 10px 15px var(--sombra-1);
+        }
+
+        &:active {
+            transform: scale(1.06) translateY(-3px);
+            box-shadow: 0 6px 20px var(--sombra-1);
+        }
+
+        .slide5__midias {
+
+        }
+    }
+
+    .slide5__svg {
+        fill: var(--cor-cinza-muito-clara);
+        transition: all .2s;
+
+        &:hover {
+            position: relative;
+            transform: scale(1.2);
+            fill: var(--cor-primaria-clara);
+            animation: pulsarForte .8s infinite;
         }
     }
 }
