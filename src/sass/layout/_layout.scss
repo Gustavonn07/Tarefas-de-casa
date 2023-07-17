@@ -39,3 +39,11 @@
         }
     }
 }
+
+#slide3 {
+    background-color: var(--cor-cinza-clara-media);
+
+    & .slide3__item {
+        background-color: var(--cor-primaria-escura);
+    }
+}

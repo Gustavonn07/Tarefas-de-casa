@@ -35,6 +35,13 @@
   }
 }
 
+#slide3 {
+  background-color: var(--cor-cinza-clara-media);
+}
+#slide3 .slide3__item {
+  background-color: var(--cor-primaria-escura);
+}
+
 :root {
   --cor-primaria: #C61067;
   --cor-primaria-escura: #940c4e;
