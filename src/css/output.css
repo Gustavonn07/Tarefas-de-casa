@@ -50,6 +50,10 @@ section {
 #slide4__input-text:focus, #slide4__input-text:active {
   outline: none;
 }
+#slide4__input-text::placeholder {
+  color: var(--cor-cinza-muito-clara);
+  text-align: center;
+}
 #slide4__output p {
   color: var(--cor-branca);
   background-color: var(--cor-cinza-clara);
@@ -133,6 +137,21 @@ section {
 }
 .btn2:active {
   transform: translateY(-2px) scale(1);
+}
+
+.btn3 {
+  color: var(--cor-branca);
+  background-color: var(--cor-primaria-escura);
+  transition: all 0.2s;
+}
+.btn3:hover {
+  color: var(--cor-branca);
+  background-color: var(--cor-primaria);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 15px var(--sombra-1);
+}
+.btn3:active {
+  transform: translateY(-1px) scale(1);
 }
 
 /*# sourceMappingURL=output.css.map */

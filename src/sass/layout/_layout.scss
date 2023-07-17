@@ -63,6 +63,11 @@ section {
             &:active {
                 outline: none;
             }
+
+            &::placeholder {
+                color: var(--cor-cinza-muito-clara);
+                text-align: center;
+            }
         }
     }
 
@@ -90,10 +95,6 @@ section {
         &:active {
             transform: scale(1.06) translateY(-3px);
             box-shadow: 0 6px 20px var(--sombra-1);
-        }
-
-        .slide5__midias {
-
         }
     }
 

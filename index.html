@@ -8,7 +8,8 @@
     <title>Apresentação Js</title>
 </head>
 <body class="m-0 p-0 list-none border-none no-underline">
-    <section id="slide1" class="w-full h-screen p-10 bg-cover text-gray-300 flex justify-center flex-col items-center">
+
+    <section id="slide1" class="flex w-full h-screen p-10 bg-cover text-gray-300 justify-center flex-col items-center">
 
         <img src="src/images/logo-digital.webp" alt="Logo da digital college" class="w-32 self-start">
 
@@ -16,13 +17,13 @@
             Object.keys(), Object.values() e<br> Object.entries()
         </h1>
 
-        <button class="slide__carrossel-btn--inicial btn uppercase text-2xl mr-96 tracking-wide border-2 p-2 rounded-md">
+        <button class="slide__carrossel-btn--inicial btn proximo uppercase text-2xl mr-96 tracking-wide border-2 p-2 rounded-md">
             começar
         </button>
 
     </section>
 
-    <section id="slide2" class="w-full h-screen p-10 pb-0 text-gray-300 flex flex-col justify-center items-end">
+    <section id="slide2" class="hidden w-full h-screen p-10 pb-0 text-gray-300 flex-col justify-center items-end">
         
         <h2 class="self-center text-7xl font-bold mb-16">
             O que são esses métodos?
@@ -44,11 +45,11 @@
             </ul>
 
             <div class="slide__carrossel-btn self-center flex gap-8 text-lg mt-12">
-                <button class="btn2 uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
+                <button class="btn2 anterior uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
                     Anterior
                 </button>
     
-                <button class="btn2 uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
+                <button class="btn2 proximo uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
                     Próximo
                 </button>
             </div>
@@ -56,7 +57,7 @@
     </section>
 
 
-    <section id="slide3" class="w-full h-screen p-10 text-gray-300 flex flex-col items-center">
+    <section id="slide3" class="hidden w-full h-screen p-10 text-gray-300 flex-col items-center">
             <h2 class="text-7xl font-bold mb-16 mt-6">O que esses métodos fazem?</h2>
 
             <ul class="flex w-full justify-between mt-16 gap-10 text-center">
@@ -77,45 +78,51 @@
             </ul>
 
             <div class="slide__carrossel-btn self-center flex gap-8 text-lg mt-auto pb-5">
-                <button class="btn2 uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
+                <button class="btn2 anterior uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
                     Anterior
                 </button>
     
-                <button class="btn2 uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
+                <button class="btn2 proximo uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
                     Próximo
                 </button>
             </div>
     </section>
 
 
-    <section id="slide4" class="w-full h-screen p-10 text-gray-300 flex flex-col">
+    <section id="slide4" class="hidden w-full h-screen p-10 text-gray-300 flex-col">
         <h2 class="text-7xl font-bold mb-10 mt-3 text-center">Vamos ver na prática!</h2>
 
         <div class="flex gap-14">
             <div id="slide4__input" class="w-1/2 flex flex-col rounded-lg shadow-xl gap-3">
-                <label for="slide4__input-text" class="text-3xl">Escreva seu código:</label>
-                <textarea class="p-2 text-lg" name="slide4__input-text" id="slide4__input-text" cols="25" rows="12"></textarea>
+                <div class="flex justify-between">
+                    <label for="slide4__input-text" class="text-3xl">Escreva seu código:</label>
+
+                    <button class="btn3 p-2 rounded-md" id="submit">Transformar código</button>
+                </div>
+
+                <textarea class="p-2 text-lg" name="slide4__input-text" id="slide4__input-text" cols="25" rows="12" placeholder="Ao invez de usar console.log use so o nome da variavel!"></textarea>
             </div>
 
             <div id="slide4__output" class="w-1/2 flex flex-col gap-3 rounded-lg shadow-xl">
                 <h3 class="text-3xl">Console:</h3>
-                <p class="w-full h-full p-2 text-lg"></p>
+
+                <p id="console" class="w-full h-full p-2 text-lg"></p>
             </div>
         </div>
 
         <div class="slide__carrossel-btn self-center flex gap-8 text-lg mt-auto pb-5">
-            <button class="btn2 uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
+            <button class="btn2 anterior uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
                 Anterior
             </button>
 
-            <button class="btn2 uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
+            <button class="btn2 proximo uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
                 Próximo
             </button>
         </div>
     </section>
 
     
-    <section id="slide5" class="w-full h-screen p-10 text-gray-300 flex flex-col">
+    <section id="slide5" class="hidden w-full h-screen p-10 text-gray-300 flex-col">
         <h2 class="text-7xl font-bold mb-10 mt-3 text-center">Referências</h2>
 
         <div class="flex w-full text-center">
@@ -166,11 +173,12 @@
         </div>
 
         
-        <button class="btn2 uppercase tracking-wide shadow-lg p-2 rounded-md self-center text-2xl mt-auto">
+        <button class="btn2 anterior uppercase tracking-wide shadow-lg p-2 rounded-md self-center text-2xl mt-auto">
             Anterior
         </button>
     </section>
     
     <script src="src/javascript/carrossel.js"></script>
+    <script src="src/javascript/console.js"></script>
 </body>
 </html>
