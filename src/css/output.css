@@ -4,12 +4,15 @@
   font-family: "Lato", sans-serif;
 }
 
+section {
+  background-color: var(--cor-cinza-clara-media);
+}
+
 #slide1 {
   background-image: linear-gradient(80deg, var(--cor-cinza-media-opacidade-1) 70%, transparent 70%), url(../images/banner.webp);
 }
 
 #slide2 {
-  background-color: var(--cor-cinza-clara-media);
   overflow: hidden;
 }
 #slide2__conteudo {
@@ -35,11 +38,21 @@
   }
 }
 
-#slide3 {
-  background-color: var(--cor-cinza-clara-media);
-}
 #slide3 .slide3__item {
   background-color: var(--cor-primaria-escura);
+}
+
+#slide4__input-text {
+  resize: none;
+  color: var(--cor-branca);
+  background-color: var(--cor-cinza-clara);
+}
+#slide4__input-text:focus, #slide4__input-text:active {
+  outline: none;
+}
+#slide4__output p {
+  color: var(--cor-branca);
+  background-color: var(--cor-cinza-clara);
 }
 
 :root {
@@ -51,6 +64,7 @@
   --cor-cinza-media: #111010;
   --cor-cinza-escura: #070707;
   --cor-branca: #fff;
+  --cor-preta: #000;
   --cor-cinza-media-opacidade-1: #111010f8;
   --sombra-1: #00000090;
 }

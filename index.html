@@ -12,7 +12,7 @@
 
         <img src="src/images/logo-digital.webp" alt="Logo da digital college" class="w-32 self-start">
 
-        <h1 class="font-bold text-4xl m-auto pr-96 tracking-widest bg-transparent whitespace-nowrap">
+        <h1 class="font-bold text-5xl m-auto pr-96 tracking-widest bg-transparent whitespace-nowrap">
             Object.keys(), Object.values() e<br> Object.entries()
         </h1>
 
@@ -62,17 +62,17 @@
             <ul class="flex w-full justify-between mt-16 gap-10 text-center">
                 <li class="slide3__item p-5 flex flex-col gap-10 w-full rounded-lg shadow-xl">
                     <h3 class="text-6xl">Object.keys</h3>
-                    <p class="text-3xl text-green-200">Retorna uma array com as keys dos objetos.</p>
+                    <p class="text-3xl text-green-200">Retorna uma array com as chaves dos objetos.</p>
                 </li>
 
                 <li class="slide3__item p-5 flex flex-col gap-10 w-full rounded-lg shadow-xl">
                     <h3 class="text-6xl">Object.values</h3>
-                    <p class="text-3xl text-green-200">Retorna uma array com os valores das keys dos objetos.</p>
+                    <p class="text-3xl text-green-200">Retorna uma array com os valores das chaves dos objetos.</p>
                 </li>
 
                 <li class="slide3__item p-5 flex flex-col gap-10 w-full rounded-lg shadow-xl">
                     <h3 class="text-6xl">Object.entries</h3>
-                    <p class="text-3xl text-green-200">Retorna uma array com as keys e valores dos objetos.</p>
+                    <p class="text-3xl text-green-200">Retorna uma array com as chaves e valores dos objetos.</p>
                 </li>
             </ul>
 
@@ -88,8 +88,30 @@
     </section>
 
 
-    <section id="slide4" class="w-full h-screen p-10">
+    <section id="slide4" class="w-full h-screen p-10 text-gray-300 flex flex-col">
+        <h2 class="text-7xl font-bold mb-10 mt-3 text-center">Vamos ver na prática!</h2>
 
+        <div class="flex gap-14">
+            <div id="slide4__input" class="w-1/2 flex flex-col rounded-lg shadow-xl gap-3">
+                <label for="slide4__input-text" class="text-3xl">Escreva seu código:</label>
+                <textarea class="p-2 text-lg" name="slide4__input-text" id="slide4__input-text" cols="25" rows="12"></textarea>
+            </div>
+
+            <div id="slide4__output" class="w-1/2 flex flex-col gap-3 rounded-lg shadow-xl">
+                <h3 class="text-3xl">Console:</h3>
+                <p class="w-full h-full p-2 text-lg"></p>
+            </div>
+        </div>
+
+        <div class="slide__carrossel-btn self-center flex gap-8 text-lg mt-auto pb-5">
+            <button class="btn2 uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
+                Anterior
+            </button>
+
+            <button class="btn2 uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
+                Próximo
+            </button>
+        </div>
     </section>
 
     

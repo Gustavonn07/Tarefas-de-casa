@@ -3,6 +3,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+section {
+    background-color: var(--cor-cinza-clara-media);
+}
+
 #slide1 {
     background-image:linear-gradient(80deg,
                                      var(--cor-cinza-media-opacidade-1) 70%,
@@ -11,7 +15,6 @@
 }
 
 #slide2 {
-    background-color: var(--cor-cinza-clara-media);
     overflow: hidden;
 
     &__conteudo {
@@ -41,9 +44,33 @@
 }
 
 #slide3 {
-    background-color: var(--cor-cinza-clara-media);
 
     & .slide3__item {
         background-color: var(--cor-primaria-escura);
+    }
+}
+
+#slide4 {
+
+    &__input {
+
+        &-text {
+            resize: none;
+            color: var(--cor-branca);
+            background-color: var(--cor-cinza-clara);
+
+            &:focus,
+            &:active {
+                outline: none;
+            }
+        }
+    }
+
+    &__output {
+
+        & p {
+            color: var(--cor-branca);
+            background-color: var(--cor-cinza-clara);
+        }
     }
 }
