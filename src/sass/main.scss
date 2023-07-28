@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-@import "layout/layout";
-@import "utilities/variaveis";
-@import "components/animations";
-@import "components/componentes";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@import "base";
+@import "layout";
+@import "variables";
+@import "tipography";

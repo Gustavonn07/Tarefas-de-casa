@@ -3,182 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/output.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Apresentação Js</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <title>BIA</title>
 </head>
-<body class="m-0 p-0 list-none border-none no-underline">
+<body>
+    <main class="main">
+        <section class="main__section main__section--1">
+            <h1 class="main__heading">Em que número
+                <span class="main__span">Bia</span> está pensando?</h1>
 
-    <section id="slide1" class="flex w-full h-screen p-10 bg-cover text-gray-300 justify-center flex-col items-center">
+            <img src="src/images/BIA.png" alt="Uma mulher de cabelos e olhos castanhos, com a pele clara e de blusa vermelha pensando com a mão no queixo" class="main__img">
+        </section>
 
-        <img src="src/images/logo-digital.webp" alt="Logo da digital college" class="w-32 self-start">
+        <section class="main__section main__section--2">
+            <!-- Troca pela resposta no fim -->
+            <input type="number" name="input" id="input" class="main__input">
+            
+            <!-- <button class="main__btn">Tentar novamente</button> -->
 
-        <h1 class="font-bold text-5xl m-auto pr-96 tracking-widest bg-transparent whitespace-nowrap">
-            Object.keys(), Object.values() e<br> Object.entries()
-        </h1>
-
-        <button class="slide__carrossel-btn--inicial btn proximo uppercase text-2xl mr-96 tracking-wide border-2 p-2 rounded-md">
-            começar
-        </button>
-
-    </section>
-
-    <section id="slide2" class="hidden w-full h-screen p-10 pb-0 text-gray-300 flex-col justify-center items-end">
-        
-        <h2 class="self-center text-7xl font-bold mb-16">
-            O que são esses métodos?
-        </h2>
-
-        <div id="slide2__conteudo" class="w-3/4 h-screen rounded-tl-3xl shadow-2xl flex flex-col items-center justify-center">
-            <ul class="ml-12">
-                <li class="slide2__item text-2xl mb-10">
-                    Os métodos em JavaScript são funções que estão associadas a um objeto e podem ser chamadas para realizar ações específicas ou executar tarefas relacionadas ao objeto em questão. Eles desempenham um papel fundamental na programação orientada a objetos, permitindo a organização lógica e modularização do código.
-                </li>
-                
-                <li class="slide2__item text-2xl mb-10">
-                    Os métodos permitem organização e a manutenção do código mais facilmente
-                </li>
-
-                <li class="slide2__item text-2xl">
-                    Object.entries, Object.keys e Object.values são métodos estáticos do objeto Object no JavaScript. Eles são usados para trabalhar com objetos.
-                </li>
-            </ul>
-
-            <div class="slide__carrossel-btn self-center flex gap-8 text-lg mt-12">
-                <button class="btn2 anterior uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
-                    Anterior
-                </button>
-    
-                <button class="btn2 proximo uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
-                    Próximo
-                </button>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="slide3" class="hidden w-full h-screen p-10 text-gray-300 flex-col items-center">
-            <h2 class="text-7xl font-bold mb-16 mt-6">O que esses métodos fazem?</h2>
-
-            <ul class="flex w-full justify-between mt-16 gap-10 text-center">
-                <li class="slide3__item p-5 flex flex-col gap-10 w-full rounded-lg shadow-xl">
-                    <h3 class="text-6xl">Object.keys</h3>
-                    <p class="text-3xl text-green-200">Retorna uma array com as chaves dos objetos.</p>
-                </li>
-
-                <li class="slide3__item p-5 flex flex-col gap-10 w-full rounded-lg shadow-xl">
-                    <h3 class="text-6xl">Object.values</h3>
-                    <p class="text-3xl text-green-200">Retorna uma array com os valores das chaves dos objetos.</p>
-                </li>
-
-                <li class="slide3__item p-5 flex flex-col gap-10 w-full rounded-lg shadow-xl">
-                    <h3 class="text-6xl">Object.entries</h3>
-                    <p class="text-3xl text-green-200">Retorna uma array com as chaves e valores dos objetos.</p>
-                </li>
-            </ul>
-
-            <div class="slide__carrossel-btn self-center flex gap-8 text-lg mt-auto pb-5">
-                <button class="btn2 anterior uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
-                    Anterior
-                </button>
-    
-                <button class="btn2 proximo uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
-                    Próximo
-                </button>
-            </div>
-    </section>
-
-
-    <section id="slide4" class="hidden w-full h-screen p-10 text-gray-300 flex-col">
-        <h2 class="text-7xl font-bold mb-10 mt-3 text-center">Vamos ver na prática!</h2>
-
-        <div class="flex gap-14">
-            <div id="slide4__input" class="w-1/2 flex flex-col rounded-lg shadow-xl gap-3">
-                <div class="flex justify-between">
-                    <label for="slide4__input-text" class="text-3xl">Escreva seu código:</label>
-
-                    <button class="btn3 p-2 rounded-md" id="submit">Transformar código</button>
-                </div>
-
-                <textarea class="p-2 text-lg" name="slide4__input-text" id="slide4__input-text" cols="25" rows="12" placeholder="Ao invez de usar console.log use so o nome da variavel!"></textarea>
-            </div>
-
-            <div id="slide4__output" class="w-1/2 flex flex-col gap-3 rounded-lg shadow-xl">
-                <h3 class="text-3xl">Console:</h3>
-
-                <p id="console" class="w-full h-full p-2 text-lg"></p>
-            </div>
-        </div>
-
-        <div class="slide__carrossel-btn self-center flex gap-8 text-lg mt-auto pb-5">
-            <button class="btn2 anterior uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
-                Anterior
-            </button>
-
-            <button class="btn2 proximo uppercase text-xl tracking-wide shadow-lg p-2 rounded-md">
-                Próximo
-            </button>
-        </div>
-    </section>
-
-    
-    <section id="slide5" class="hidden w-full h-screen p-10 text-gray-300 flex-col">
-        <h2 class="text-7xl font-bold mb-10 mt-3 text-center">Referências</h2>
-
-        <div class="flex w-full text-center">
-            <div class="w-1/2">
-                <ul class="flex flex-col items-center gap-10 h-full">
-
-                    <li class="slide5__item cursor-pointer shadow-xl rounded-xl h-32 flex items-center justify-center text-4xl w-96 p-4">
-                        
-                        <a href="https://www.youtube.com/watch?v=3s0YFgxuOV0" target="_blank">Canal Jason Riveira</a>
-                    </li>
-
-                    <li class="slide5__item cursor-pointer shadow-xl rounded-xl h-32 flex items-center justify-center text-4xl w-96 p-4">
-
-                        <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
-                    </li>
-
-                    <li class="slide5__item cursor-pointer shadow-xl rounded-xl h-32 flex items-center justify-center text-4xl w-96 p-4">
-
-                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">Mozilla</a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="w-1/2 flex flex-col h-full justify-between items-center">
-                <a href="https://chat.openai.com/" class="slide5__item cursor-pointer shadow-xl rounded-xl h-32 flex items-center justify-center text-4xl w-96 p-4" target="_blank">Chat GPT</a>
-
-                <div class="slide5__midias flex justify-center gap-24 w-full">
-                    <a href="https://github.com/Gustavonn07" target="_blank">
-                        <svg class="slide5__svg w-12">
-                            <use xlink:href="src/images/sprite.svg#icon-github"></use>
-                        </svg>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/gustavo-nepomuceno-657807272/" target="_blank">
-                        <svg class="slide5__svg w-12">
-                            <use xlink:href="src/images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-
-                    <a href="https://www.instagram.com/_gustavonep/" target="_blank">
-                        <svg class="slide5__svg w-12">
-                            <use xlink:href="src/images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        
-        <button class="btn2 anterior uppercase tracking-wide shadow-lg p-2 rounded-md self-center text-2xl mt-auto">
-            Anterior
-        </button>
-    </section>
-    
-    <script src="src/javascript/carrossel.js"></script>
-    <script src="src/javascript/console.js"></script>
+            <p class="main__paragraph">
+                Seus palpites: <br>
+                <span id="tentativas" class="main__span main__span--tentativas">23 - 50 - 35 - 40 - 1</span>
+            </p>
+        </section>
+    </main>
 </body>
 </html>

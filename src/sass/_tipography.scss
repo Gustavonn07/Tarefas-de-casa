@@ -1,0 +1,33 @@
+.main {
+    font-weight: 500;
+
+    &__heading {
+        padding-top: 2rem;
+        font-size: var(--font-xl);
+    }
+
+    &__span {
+        color: var(--color-primary);
+    }
+
+    &__btn {
+        border-radius: .5rem;
+        transition: all .2s;
+        background-color: var(--color-secondary);
+        padding: .8rem var(--font-sm);
+        font-size: var(--font-sm);
+        color: var(--color-white);
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.08) translateY(-.2rem);
+            box-shadow: var(--shadow-2);
+        }
+
+        &:active {
+            transform: scale(1.05) translateY(-.1rem);
+
+        } 
+    }
+}

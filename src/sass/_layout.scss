@@ -1,0 +1,31 @@
+.main {
+    width: 50rem;
+    height: 44.2rem;
+    border-radius: 1rem;
+    padding: var(--font-sm);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-1);
+
+    @extend .flex;
+
+    &__section {
+
+        &--1 {
+            display: flex;
+        }
+
+        &--2 {
+            @extend .flex;
+            align-items: center;
+        }
+    }
+
+    &__img {
+        margin-left: -2rem;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
