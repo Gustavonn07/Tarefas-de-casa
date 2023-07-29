@@ -2,6 +2,8 @@ const tentativasInput = document.getElementById('input');
 const tentativasSPAN = document.getElementById('tentativas');
 const placeholder = document.getElementById('placeholder');
 const img = document.getElementById('img');
+const arrowUp = document.getElementById('up');
+const arrowDown = document.getElementById('down');
 let tentativas = 0;
 
 function geradorDeNumero() {
@@ -10,10 +12,11 @@ function geradorDeNumero() {
 
 const numFinal = geradorDeNumero();
 
-
 tentativasInput.addEventListener('keydown', function(event) {
 
     if(event.key === 'Enter') {
+        setasAuxiliadoras();
+        
         if(tentativasInput.value == numFinal) {
             tentativas = 0;
             img.src = `src/images/Vencedor.png`;
@@ -25,7 +28,8 @@ tentativasInput.addEventListener('keydown', function(event) {
             </p>
             `
             tentativasInput.style.display= 'none';
-
+            arrowUp.style.display = 'none';
+            arrowDown.style.display = 'none';
 
         } else {
             tentativas++;
@@ -68,10 +72,26 @@ tentativasInput.addEventListener('keydown', function(event) {
                     location.reload();
                 });
 
-                tentativasInput.classList.add('none')
+                tentativasInput.style.display= 'none';
+                arrowUp.style.display = 'none';
+                arrowDown.style.display = 'none';
             };
         };
     };
 });
 
+function setasAuxiliadoras() {
+    if(tentativasInput.value > numFinal ) {
+        arrowUp.classList.remove('main__arrow--active');
+        arrowDown.classList.add('main__arrow--active');
 
+    } else if(tentativasInput.value < numFinal) {
+        arrowUp.classList.add('main__arrow--active');
+        arrowDown.classList.remove('main__arrow--active');
+
+    } else {
+        arrowUp.classList.remove('main__arrow--active');
+        arrowDown.classList.remove('main__arrow--active');
+        
+    }
+}

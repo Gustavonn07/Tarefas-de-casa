@@ -25,10 +25,6 @@ body {
   background-color: var(--color-background);
 }
 
-.none {
-  display: none;
-}
-
 .main {
   width: 50rem;
   height: 44.2rem;
@@ -47,6 +43,11 @@ body {
 .main__img {
   margin-left: -2rem;
 }
+.main__container {
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+}
 .main__input {
   margin-top: 3.6rem;
   margin-bottom: 2.6rem;
@@ -64,6 +65,18 @@ body {
 .main__input:active {
   transform: scale(1.05) translateY(-0.1rem);
 }
+.main__arrow {
+  width: 5rem;
+  height: 6rem;
+  fill: var(--color-primary-dark);
+  transition: all 0.4s;
+}
+.main__arrow--active {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-2);
+  fill: var(--color-primary);
+  border-radius: 100rem;
+}
 .main__textLoser, .main__textChamp {
   margin-top: 3.6rem;
   margin-bottom: 1rem;
@@ -78,6 +91,7 @@ body {
   --color-white: #fff;
   --color-black: #000;
   --color-primary: #FFB431;
+  --color-primary-dark: #d2bd97;
   --color-secondary: #DE5540;
   --color-background: #DEDEDE;
   --shadow-1: 0px 5px 20px 0px #00000026;

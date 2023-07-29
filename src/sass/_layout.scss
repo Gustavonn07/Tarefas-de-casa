@@ -25,6 +25,12 @@
         margin-left: -2rem;
     }
 
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 3.6rem;
+    }
+
     &__input {
         margin-top: 3.6rem;
         margin-bottom: 2.6rem;
@@ -46,6 +52,20 @@
         &:active {
             transform: scale(1.05) translateY(-.1rem);
         } 
+    }
+
+    &__arrow {
+        width: 5rem;
+        height: 6rem;
+        fill: var(--color-primary-dark);
+        transition: all .4s;
+
+        &--active {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-2);
+            fill: var(--color-primary);
+            border-radius: 100rem;
+        }
     }
 
     &__textLoser,

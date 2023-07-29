@@ -20,7 +20,13 @@
 
             <div id="placeholder"></div>
 
-            <input type="number" name="input" min="0" id="input" class="main__input">
+            <div class="main__container">
+                <box-icon class="main__arrow" id="up" name='up-arrow-alt'></box-icon>
+
+                <input type="number" name="input" min="0" id="input" class="main__input">
+
+                <box-icon class="main__arrow" id="down" name='down-arrow-alt'></box-icon>           
+            </div>
 
             <p class="main__paragraph">
                 Seus palpites: <br>
@@ -29,6 +35,8 @@
         </section>
     </main>
 
+    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="src/javascript/script.js"></script>
 </body>
 </html>
