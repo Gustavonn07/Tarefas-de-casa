@@ -119,7 +119,7 @@ function setasAuxiliadoras() {
 function erroModal(numeroTeste, array) {
     if(possuiValorMaiorQue100(numeroTeste, array)) {
         modal.style.display = 'flex';
-        erro.textContent = 'Valor menor do que 100, tente novamente!';
+        erro.textContent = 'Valor maior do que 100, tente novamente!';
         arrayTentativas.pop()
 
     } else if(possuiValorMenorQue0(numeroTeste, array)) {
