@@ -40,6 +40,7 @@
         outline: 2px solid var(--color-secondary);
         font-size: var(--font-lg);
         text-align: center;
+        transition: all .3s;
 
         border-radius: .5rem;
 
@@ -58,7 +59,7 @@
         width: 5rem;
         height: 6rem;
         fill: var(--color-white);
-        transition: all .4s;
+        transition: all .6s;
 
         &--active {
             transform: scale(1.03);
