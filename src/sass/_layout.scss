@@ -57,7 +57,7 @@
     &__arrow {
         width: 5rem;
         height: 6rem;
-        fill: var(--color-primary-dark);
+        fill: var(--color-white);
         transition: all .4s;
 
         &--active {
@@ -73,8 +73,6 @@
         margin-top: 3.6rem;
         margin-bottom: 1rem;
     }
-
-    
 }
 
 .flex {
