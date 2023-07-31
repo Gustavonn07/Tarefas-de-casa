@@ -6,12 +6,25 @@
     background-color: var(--color-white);
     box-shadow: var(--shadow-1);
 
+    @media only screen and (max-width: $sm) {
+        width: 100%;
+        height: 100%;
+    }
+
     @extend .flex;
 
     &__section {
 
         &--1 {
             display: flex;
+
+            @media only screen and (max-width: $sm) {
+                margin-top: 3rem;
+            }
+
+            @media only screen and (max-width: $ssm) {
+                flex-direction: column;
+            }
         }
 
         &--2 {
@@ -23,12 +36,24 @@
 
     &__img {
         margin-left: -2rem;
+
+        @media only screen and (max-width: $sm) {
+            width: 50vw;
+        }
+
+        @media only screen and (max-width: $ssm) {
+            margin: 4rem auto;
+        }
     }
 
     &__container {
         display: flex;
         align-items: center;
         gap: 3.6rem;
+
+        @media only screen and (max-width: $sm) {
+            margin-top: .5rem;
+        }
     }
 
     &__input {
@@ -52,7 +77,17 @@
 
         &:active {
             transform: scale(1.05) translateY(-.1rem);
-        } 
+        }
+
+        @media only screen and (max-width: $sm) {
+            height: 6rem;
+            width: 6.5rem;
+        }
+
+        @media only screen and (max-width: $sm) {
+            width: 8rem;
+            height: 7.5rem;
+        }
     }
 
     &__arrow {
@@ -67,12 +102,16 @@
             fill: var(--color-primary);
             border-radius: 100rem;
         }
-    }
 
-    &__textLoser,
-    &__textChamp {
-        margin-top: 3.6rem;
-        margin-bottom: 1rem;
+        @media only screen and (max-width: $sm) {
+            width: 6rem;
+            height: 6.5rem;
+        }
+
+        @media only screen and (max-width: $ssm) {
+            width: 7rem;
+            height: 7.5rem;
+        }
     }
 }
 
