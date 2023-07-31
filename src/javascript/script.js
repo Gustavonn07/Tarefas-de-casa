@@ -112,7 +112,6 @@ function setasAuxiliadoras() {
     } else {
         arrowUp.classList.remove('main__arrow--active');
         arrowDown.classList.remove('main__arrow--active');
-
     }
 };
 
@@ -120,16 +119,19 @@ function erroModal(numeroTeste, array) {
     if(possuiValorMaiorQue100(numeroTeste, array)) {
         modal.style.display = 'flex';
         erro.textContent = 'Valor maior do que 100, tente novamente!';
-        arrayTentativas.pop()
+        arrayTentativas.pop();
+        tentativasInput.disabled = true;
 
     } else if(possuiValorMenorQue0(numeroTeste, array)) {
         modal.style.display = 'flex';
         erro.textContent = 'Valor menor do que 0, tente novamente!';
-        arrayTentativas.pop()
+        arrayTentativas.pop();
+        tentativasInput.disabled = true;
 
     } else if (possuiValoresRepetidos(array)) {
         modal.style.display = 'flex';
         erro.textContent = 'Valor repetido, tente novamente!';
+        tentativasInput.disabled = true;
 
     };
 };
@@ -155,9 +157,18 @@ function possuiValoresRepetidos(array) {
     return false;
 };
 
-x.addEventListener('click', () => {
+// x.addEventListener('click', function() {
+//     eventoModalX();
+// });
+
+modal.addEventListener('click', function() {
+    eventoModalX();
+});
+
+function eventoModalX() {
     modal.style.display = 'none';
     erro.textContent = '';
 
     tentativas--;
-});
+    tentativasInput.disabled = false;
+}
