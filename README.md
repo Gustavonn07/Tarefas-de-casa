@@ -42,5 +42,6 @@ Repositório para adicionar os trabalhos de casa do curso de fullstack da Digita
 - Exercício com functions (Individual)
 - Apresentação em slides (Invididual)
 - BIA (Individual)
+- Adicionar modal API dos países (Individual)
 
 <hr>
