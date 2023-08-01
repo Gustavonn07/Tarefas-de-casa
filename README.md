@@ -11,7 +11,7 @@ Repositório para adicionar os trabalhos de casa do curso de fullstack da Digita
 
 <hr>
 
-<h3 align='center'>Unidade 2 (HTML e CSS):</h3>
+<h3 align='center'>Unidade 2 (HTML5 e CSS3):</h3>
 
 - Scrum (Trabalho em grupo)
 
@@ -23,7 +23,7 @@ Repositório para adicionar os trabalhos de casa do curso de fullstack da Digita
 
 <hr>
 
-<h3 align='center'>Unidade 4 (HTML e CSS Avançado):</h3>
+<h3 align='center'>Unidade 4 (HTML5 e CSS3 Avançado):</h3>
 
 - Landpage com AOS (Individual)
 - Animação com a logo da Digital College (Individual)
@@ -31,7 +31,7 @@ Repositório para adicionar os trabalhos de casa do curso de fullstack da Digita
 
 <hr>
 
-<h3 align='center'>Unidade 5 (Logica de programação):</h3>
+<h3 align='center'>Unidade 5 (Lógica de programação):</h3>
 
 - Responsividade Digital Teams (Individual)
 
