@@ -45,3 +45,9 @@ Repositório para adicionar os trabalhos de casa do curso de fullstack da Digita
 - Adicionar modal API dos países (Individual)
 
 <hr>
+
+<h3 align='center'>Unidade 7 (React + Typescript):</h3>
+
+- Botão de Darkmode (Individual)
+
+<hr>
