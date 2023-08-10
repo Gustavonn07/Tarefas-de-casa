@@ -1,48 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/main.css">
-    <link rel="shortcut icon" href="src/images/BIA.png" type="image/x-icon">
-    <title>BIA</title>
-</head>
-<body>
-    <main class="main">
-        <section class="main__section main__section--1">
-            <h1 class="main__heading">Em que número
-                <span class="main__span">Bia</span> está pensando?</h1>
-
-            <img src="src/images/BIA.png" alt="Uma mulher de cabelos e olhos castanhos, com a pele clara e de blusa vermelha pensando com a mão no queixo" class="main__img" id="img">
-        </section>
-
-        <section class="main__section main__section--2">
-
-            <div id="placeholder"></div>
-
-            <div class="main__container">
-                <box-icon class="main__arrow" id="up" name='up-arrow-alt'></box-icon>
-
-                <input type="number" name="input" min="0" max="100" id="input" class="main__input">
-
-                <box-icon class="main__arrow" id="down" name='down-arrow-alt'></box-icon>           
-            </div>
-
-            <p class="main__paragraph">
-                Seus palpites: <br>
-                <span id="tentativas" class="main__span main__span--tentativas"></span>
-            </p>
-        </section>
-    </main>
-
-    <section class="modal" id="modal">
-        <div class="modal__container">
-            <box-icon class="modal__icon" id="x" name='x'></box-icon>
-            <p id="alerta" class="modal__paragraph">Erro: <span id="erro" class="modal__span"></span></p>
-        </div>
-    </section>
-
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="src/javascript/script.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
