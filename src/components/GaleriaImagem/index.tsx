@@ -1,12 +1,12 @@
 import './style.css';
 
-const Card = () => {
+const GaleriaImagem = () => {
 
     return (
         <>
-        
+
         </>
     )
 }
 
-export default Card;
+export default GaleriaImagem;

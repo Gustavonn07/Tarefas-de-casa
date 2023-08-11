@@ -1,6 +1,6 @@
 import './style.css';
 
-const Card = () => {
+const HeaderHeading = () => {
 
     return (
         <>
@@ -9,4 +9,4 @@ const Card = () => {
     )
 }
 
-export default Card;
+export default HeaderHeading

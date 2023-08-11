@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react';
 import './style.css';
 
-type PropsGridGaleria = {
+type PropsHeader = {
     children: ReactNode
 }
 
-const GridGaleria = ({children}: PropsGridGaleria) => {
-
+const Header = ({children}: PropsHeader) => {
+    
     return (
         <>
             {children}
@@ -14,4 +14,4 @@ const GridGaleria = ({children}: PropsGridGaleria) => {
     )
 }
 
-export default GridGaleria;
+export default Header;

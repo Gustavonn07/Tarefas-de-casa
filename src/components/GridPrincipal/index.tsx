@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react';
 import './style.css'
 
-type GridPrincipalProps  = {
+type PropsGridPrincipal  = {
     children: ReactNode;
 }
 
-const GridPrincipal = ({children}: GridPrincipalProps) => {
+const GridPrincipal = ({children}: PropsGridPrincipal) => {
 
     return (
         <>

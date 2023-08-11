@@ -5,6 +5,12 @@ import NavbarList from "./components/NavbarList";
 import Footer from "./components/Footer";
 import FooterRedesSociais from "./components/FooterRedesSociais";
 import FooterText from "./components/FooterText";
+import Header from "./components/Header";
+import HeaderHeading from "./components/HeaderHeading";
+import CardGrid from "./components/CardGrid";
+import Card from "./components/Card";
+import GridGaleria from "./components/GridGaleria";
+import GaleriaImagem from "./components/GaleriaImagem";
 
 function App() {
 
@@ -22,7 +28,20 @@ function App() {
           </Footer>
         </Navbar>
 
-        <Darkmode />
+        <Header>
+          <HeaderHeading />
+
+          <Darkmode />
+        </Header>
+
+        <CardGrid>
+          <Card />
+        </CardGrid>
+
+        <GridGaleria>
+          <GaleriaImagem />
+        </GridGaleria>
+
       </GridPrincipal>
     </>
   )
