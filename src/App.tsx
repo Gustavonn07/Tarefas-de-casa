@@ -1,8 +1,10 @@
+import Darkmode from "./components/Darkmode"
+
 function App() {
 
   return (
     <>
-      
+      <Darkmode />
     </>
   )
 }
