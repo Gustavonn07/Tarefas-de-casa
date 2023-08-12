@@ -1,5 +1,12 @@
 .header {
+    /* Darkmode mudar para mais sombra */
+    background-image: linear-gradient(90deg,
+                                    #00000060,
+                                    #00000060),
+                                    url(../../images/DuckBanner.jpg);
+    background-size: cover;
+    background-position: center center;
     grid-area: 1 / 2 / 2 / -1;
 
-    background-color: brown;
+    position: relative;
 }

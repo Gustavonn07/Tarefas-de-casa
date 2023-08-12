@@ -9,10 +9,9 @@ const Header = ({children}: PropsHeader) => {
     
     return (
         <>
-        <div className="header">
+        <header className="header">
             {children}
-            HEADER
-        </div>
+        </header>
         </>
     )
 }

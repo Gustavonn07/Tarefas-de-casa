@@ -61,7 +61,10 @@ function App() {
         </Navbar>
 
         <Header>
-          <HeaderHeading />
+          <HeaderHeading
+            texto='O FANTASTICO MUNDO'
+            texto2='DOS PATOS'
+          />
 
           <Darkmode />
         </Header>
