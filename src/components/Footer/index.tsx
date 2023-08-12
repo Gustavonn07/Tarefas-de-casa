@@ -10,7 +10,6 @@ const Footer = ({children}: PropsFooter) => {
         <>
             <div className="footer">
                 {children}
-                FOOTER
             </div>
         </>
     )

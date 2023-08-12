@@ -8,10 +8,9 @@ type PropsNavbar = {
 const Navbar = ({children}: PropsNavbar) => {
     return(
         <>
-            <div className="navbar">
+            <nav className="navbar">
                 {children}
-                NAVBAR
-            </div>
+            </nav>
         </>
     )
 } 

@@ -19,22 +19,44 @@ function App() {
       <GridPrincipal>
 
         <Navbar>
-          <NavbarList />
+          <NavbarList
+          texto = 'PATO SUPREMO'
+          />
 
-          <NavbarList />
+          <NavbarList
+          texto = 'MAIS PATOS'
+          />
 
-          <NavbarList />
+          <NavbarList
+          texto = 'PARCEIROS'
+          />
 
 
           <Footer>
-            <FooterText />
+            <FooterText
+              text='Feito por Gustavo Nepomuceno &copy; 2023'
+            />
 
-            <FooterRedesSociais />
-            
-            <FooterRedesSociais />
-            
-            <FooterRedesSociais />
-            
+            <div className="gap">
+              <FooterRedesSociais
+                img='src/images/github.svg'
+                alt='icone do github'
+                link='https://github.com/Gustavonn07'
+              />
+
+              <FooterRedesSociais
+                img='src/images/instagram.svg'
+                alt='icone do instagram'
+                link='https://www.instagram.com/_gustavonep/'
+              />
+
+              <FooterRedesSociais
+                img='src/images/linkedin.svg'
+                alt='icone do linkedin'
+                link='https://www.linkedin.com/in/gustavo-nepomuceno-657807272/'
+              />
+            </div>
+
           </Footer>
         </Navbar>
 

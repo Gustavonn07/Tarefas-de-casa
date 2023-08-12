@@ -1,0 +1,13 @@
+.footer__icon {
+    width: 2rem;
+    transition: all .2s;
+
+    &:focus,
+    &:hover {
+        transform: scale(1.08) translateY(-3px);
+    }
+
+    &:active {
+        transform: scale(1.05) translateY(-1.5px);
+    }
+}
