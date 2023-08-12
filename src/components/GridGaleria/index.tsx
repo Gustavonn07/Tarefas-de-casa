@@ -9,7 +9,10 @@ const GridGaleria = ({children}: PropsGridGaleria) => {
 
     return (
         <>
-            {children}
+            <div className="galeria">
+                {children}
+                GALERIA
+            </div>
         </>
     )
 }

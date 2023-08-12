@@ -8,7 +8,10 @@ type PropsFooter = {
 const Footer = ({children}: PropsFooter) => {
     return (
         <>
-            {children}
+            <div className="footer">
+                {children}
+                FOOTER
+            </div>
         </>
     )
 }

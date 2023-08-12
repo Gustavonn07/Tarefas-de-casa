@@ -1,0 +1,5 @@
+.navbar {
+    grid-area: 1 / 1 / -1 / 2;
+
+    background-color: cornflowerblue;
+}

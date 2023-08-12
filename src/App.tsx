@@ -21,10 +21,20 @@ function App() {
         <Navbar>
           <NavbarList />
 
+          <NavbarList />
+
+          <NavbarList />
+
+
           <Footer>
             <FooterText />
 
             <FooterRedesSociais />
+            
+            <FooterRedesSociais />
+            
+            <FooterRedesSociais />
+            
           </Footer>
         </Navbar>
 
@@ -36,10 +46,40 @@ function App() {
 
         <CardGrid>
           <Card />
+
+          <Card />
+
+          <Card />
+
         </CardGrid>
 
         <GridGaleria>
           <GaleriaImagem />
+          
+          <GaleriaImagem />
+          
+          <GaleriaImagem />
+          
+          <GaleriaImagem />
+          
+          <GaleriaImagem />
+          
+          <GaleriaImagem />
+          
+          <GaleriaImagem />
+          
+          <GaleriaImagem />
+          
+          <GaleriaImagem />
+          
+          <GaleriaImagem />
+          
+          <GaleriaImagem />
+          
+          <GaleriaImagem />
+          
+          <GaleriaImagem />
+          
         </GridGaleria>
 
       </GridPrincipal>

@@ -1,0 +1,5 @@
+.grid__card {
+    grid-area: 2 / 2 / 3 / -1;
+
+    background-color: aqua;
+}

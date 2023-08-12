@@ -9,7 +9,7 @@ const GridPrincipal = ({children}: PropsGridPrincipal) => {
 
     return (
         <>
-            <div className="grid__principal">
+            <div className="grid">
                 {children}
             </div>
         </>
