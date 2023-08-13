@@ -1,0 +1,9 @@
+.card__heading {
+    grid-area: 1 / 1 / 2 / -1;
+
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 3rem;
+    color: #272630d5;
+    text-transform: uppercase;
+}

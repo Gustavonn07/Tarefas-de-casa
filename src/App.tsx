@@ -8,6 +8,7 @@ import FooterText from "./components/FooterText";
 import Header from "./components/Header";
 import HeaderHeading from "./components/HeaderHeading";
 import CardGrid from "./components/CardGrid";
+import CardHeading from "./components/CardHeading";
 import Card from "./components/Card";
 import GridGaleria from "./components/GridGaleria";
 import GaleriaImagem from "./components/GaleriaImagem";
@@ -28,7 +29,15 @@ function App() {
           />
 
           <NavbarList
-          texto = 'PARCEIROS'
+          texto = 'PATOS BRILHANTES'
+          />
+
+          <NavbarList
+          texto = 'PATOS MODELOS'
+          />
+
+          <NavbarList
+          texto = 'PATOS LEGAIS'
           />
 
 
@@ -62,7 +71,7 @@ function App() {
 
         <Header>
           <HeaderHeading
-            texto='O FANTASTICO MUNDO'
+            texto='O FANTÁSTICO MUNDO'
             texto2='DOS PATOS'
           />
 
@@ -70,11 +79,42 @@ function App() {
         </Header>
 
         <CardGrid>
-          <Card />
+          <CardHeading
+            texto="Motivos para patos serem incríveis:"
+          />
 
-          <Card />
-
-          <Card />
+          <div className="container__card">
+            <Card
+              imagemPato="src/images/funnyDuck.jpg"
+              altPato="Um pato marrom andando na rua"
+              icon="src/images/check.svg"
+              altIcon="Um icone de certinho preto"
+              text1="Patos são engraçados."
+              text2="Patos são fullstack."
+              text3="Patos são fofos."
+              text4="Patos não são venenosos."
+            />
+            <Card
+              imagemPato="src/images/rubberDuck.jpg"
+              altPato="Um pato de borracha amarelo"
+              icon="src/images/check.svg"
+              altIcon="Um icone de certinho preto"
+              text1="Patos são a alegria do banho."
+              text2="Patos fazem quack."
+              text3="Tio Patinhas é um pato."
+              text4="Patolino o mago é um pato."
+            />
+            <Card
+              imagemPato="src/images/susDuck.jpg"
+              altPato="Um pato marrom olhando diretamente para a tela"
+              icon="src/images/check.svg"
+              altIcon="Um icone de certinho preto"
+              text1="Patos são curiosos."
+              text2="Patos tem bico."
+              text3="Patos gostam de comer"
+              text4="Patos não precisam de dentista"
+            />
+          </div>
 
         </CardGrid>
 

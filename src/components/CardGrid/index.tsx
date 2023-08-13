@@ -11,7 +11,6 @@ const CardGrid = ({children}: PropsCardGrid) => {
         <>
             <div className="grid__card">
                 {children}
-                GRID CARDS
             </div>
         </>
     )
