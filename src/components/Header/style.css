@@ -3,7 +3,7 @@
     background-image: linear-gradient(90deg,
                                     #00000060,
                                     #00000060),
-                                    url(../../public/images/DuckBanner.jpg);
+                                    url(images/DuckBanner.jpg);
     background-size: cover;
     background-position: center center;
     grid-area: 1 / 2 / 2 / -1;

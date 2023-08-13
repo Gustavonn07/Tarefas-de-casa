@@ -14,7 +14,7 @@ const Darkmode = () => {
             <button className='darkmode__btn' onClick={trocarModo}>
                 <img
                     className='darkmode__icon'
-                    src={clicks % 2 === 0 ? "public/images/sun.svg" : "public/images/moon.svg"} 
+                    src={clicks % 2 === 0 ? "images/sun.svg" : "images/moon.svg"} 
                     alt={clicks % 2 === 0 ? "Imagem de um sol" : "Imagem de uma lua"}
                  />
             </button>
