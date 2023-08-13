@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import './style.css';
 
 type PropsGridGaleria = {
-    children: ReactNode
+    children: ReactNode,
 }
 
 const GridGaleria = ({children}: PropsGridGaleria) => {
@@ -11,7 +11,6 @@ const GridGaleria = ({children}: PropsGridGaleria) => {
         <>
             <div className="galeria">
                 {children}
-                GALERIA
             </div>
         </>
     )

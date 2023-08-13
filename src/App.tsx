@@ -119,31 +119,103 @@ function App() {
         </CardGrid>
 
         <GridGaleria>
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--pequena-1"
+            imagem="images/patosm1.jpg"
+            desc="Imagem pequena de um pato"
+            imgsm={true}
+          />
           
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--pequena-2"
+            imagem="images/patosm2.jpg"
+            desc="Imagem pequena de um pato"
+            imgsm={true}
+          />
           
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--pequena-3"
+            imagem="images/patosm3.jpg"
+            desc="Imagem pequena de um pato"
+            imgsm={true}
+          />
           
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--pequena-4"
+            imagem="images/patosm4.jpg"
+            desc="Imagem pequena de um pato"
+            imgsm={true}
+          />
           
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--pequena-5"
+            imagem="images/patosm5.jpg"
+            desc="Imagem pequena de um pato"
+            imgsm={true}
+          />
           
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--pequena-6"
+            imagem="images/patosm6.jpg"
+            desc="Imagem pequena de um pato"
+            imgsm={true}
+          />
           
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--pequena-7"
+            imagem="images/patosm7.jpg"
+            desc="Imagem pequena de um pato"
+            imgsm={true}
+          />
           
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--pequena-8"
+            imagem="images/patosm8.jpg"
+            desc="Imagem pequena de um pato"
+            imgsm={true}
+          />
           
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--mediaVertical-1"
+            imagem="images/patomdv1.jpg"
+            desc="Imagem de um pato na vertical"
+            imgmdv={true}
+          />
           
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--mediaVertical-2"
+            imagem="images/patomdv2.jpg"
+            desc="Imagem de um pato na vertical"
+            imgmdv={true}
+          />
           
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--mediaHorizontal-1"
+            imagem="images/patomdh1.jpg"
+            desc="Imagem de um pato na horizontal"
+            imgmdh={true}
+          />
           
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--mediaHorizontal-2"
+            imagem="images/patomdh2.jpg"
+            desc="Imagem de um pato na horizontal"
+            imgmdh={true}
+          />
           
-          <GaleriaImagem />
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--larga-1"
+            imagem="images/patolg1.jpg"
+            desc="Imagem grande de pato"
+            imgsm={true}
+          />
+
+          <GaleriaImagem
+            posicao="imagem galeria__imagem--larga-2"
+            imagem="images/patolg2.jpg"
+            desc="Imagem grande de pato"
+            imgsm={true}
+          />
           
         </GridGaleria>
 
