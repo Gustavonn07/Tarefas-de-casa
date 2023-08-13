@@ -48,19 +48,19 @@ function App() {
 
             <div className="gap">
               <FooterRedesSociais
-                img='src/assets/images/github.svg'
+                img='public/images/github.svg'
                 alt='icone do github'
                 link='https://github.com/Gustavonn07'
               />
 
               <FooterRedesSociais
-                img='src/assets/images/instagram.svg'
+                img='public/images/instagram.svg'
                 alt='icone do instagram'
                 link='https://www.instagram.com/_gustavonep/'
               />
 
               <FooterRedesSociais
-                img='src/assets/images/linkedin.svg'
+                img='public/images/linkedin.svg'
                 alt='icone do linkedin'
                 link='https://www.linkedin.com/in/gustavo-nepomuceno-657807272/'
               />
@@ -85,9 +85,9 @@ function App() {
 
           <div className="container__card">
             <Card
-              imagemPato="src/assets/images/funnyDuck.jpg"
+              imagemPato="public/images/funnyDuck.jpg"
               altPato="Um pato marrom andando na rua"
-              icon="src/assets/images/check.svg"
+              icon="public/images/check.svg"
               altIcon="Um icone de certinho preto"
               text1="Patos são engraçados."
               text2="Patos são fullstack."
@@ -95,9 +95,9 @@ function App() {
               text4="Patos não são venenosos."
             />
             <Card
-              imagemPato="src/assets/images/rubberDuck.jpg"
+              imagemPato="public/images/rubberDuck.jpg"
               altPato="Um pato de borracha amarelo"
-              icon="src/assets/images/check.svg"
+              icon="public/images/check.svg"
               altIcon="Um icone de certinho preto"
               text1="Patos são a alegria do banho."
               text2="Patos fazem quack."
@@ -105,9 +105,9 @@ function App() {
               text4="Patolino o mago é um pato."
             />
             <Card
-              imagemPato="src/assets/images/susDuck.jpg"
+              imagemPato="public/images/susDuck.jpg"
               altPato="Um pato marrom olhando diretamente para a tela"
-              icon="src/assets/images/check.svg"
+              icon="public/images/check.svg"
               altIcon="Um icone de certinho preto"
               text1="Patos são curiosos."
               text2="Patos tem bico."
