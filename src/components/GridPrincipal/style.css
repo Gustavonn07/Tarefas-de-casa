@@ -4,5 +4,5 @@
 
     display: grid;
     grid-template-columns: 20rem  repeat(3, 1fr);
-    grid-template-rows: repeat(3, 60rem);
+    grid-template-rows: repeat(2, 60rem) 65rem;
 }
