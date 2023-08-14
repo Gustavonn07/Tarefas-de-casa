@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import './style.css'
+import './style.css';
 
 type PropsGridPrincipal  = {
     children: ReactNode;

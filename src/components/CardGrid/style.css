@@ -4,6 +4,4 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 5rem 1fr 5rem;
-
-    background-color: #f2f6ff;
 }
