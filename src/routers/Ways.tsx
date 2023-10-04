@@ -382,6 +382,207 @@ const Ways = () => {
                                             />
                                         </Container07>
 
+                                        <Container08>
+                                            <Blocos
+                                                elemento="C"
+                                                nAtom="6"
+                                                nomeElemento="Carbono"
+                                                peso="12.011"
+                                            />
+                                            <Blocos
+                                                elemento="Si"
+                                                nAtom="14"
+                                                nomeElemento="Silicio"
+                                                peso="28.085"
+                                            />
+                                            <Blocos
+                                                elemento="Ge"
+                                                nAtom="32"
+                                                nomeElemento="Germânio"
+                                                peso="76.630"
+                                            />
+                                            <Blocos
+                                                elemento="Sn"
+                                                nAtom="50"
+                                                nomeElemento="Estanho"
+                                                peso="118.71"
+                                            />
+                                            <Blocos
+                                                elemento="Pb"
+                                                nAtom="82"
+                                                nomeElemento="Chumbo"
+                                                peso="207.2"
+                                            />
+                                            <Blocos
+                                                elemento="Fi"
+                                                nAtom="114"
+                                                nomeElemento="Fileróvio"
+                                                peso="289"
+                                            />
+                                        </Container08>
+
+                                        <Container09>
+                                            <Blocos
+                                                elemento="N"
+                                                nAtom="7"
+                                                nomeElemento="Nitrogênio"
+                                                peso="14.007"
+                                            />
+                                            <Blocos
+                                                elemento="P"
+                                                nAtom="16"
+                                                nomeElemento="Fósforo"
+                                                peso="30.974"
+                                            />
+                                            <Blocos
+                                                elemento="As"
+                                                nomeElemento="Arsênio"
+                                                nAtom="33"
+                                                peso="74.922"
+                                            />
+                                            <Blocos
+                                                elemento="Sb"
+                                                nomeElemento="Antimônio"
+                                                nAtom="51"
+                                                peso="121.79"
+                                            />
+                                            <Blocos
+                                                elemento="Bi"
+                                                nAtom="83"
+                                                nomeElemento="Bismuto"
+                                                peso="208.98"
+                                            />
+                                            <Blocos
+                                                elemento="Mc"
+                                                nAtom="115"
+                                                nomeElemento="Moscóvio"
+                                                peso="289"
+                                            />
+                                        </Container09>
+
+                                        <Container10>
+                                            <Blocos
+                                                nAtom="8"
+                                                elemento="O"
+                                                nomeElemento="Oxigênio"
+                                                peso="15.999"
+                                            />
+                                            <Blocos
+                                                nAtom="16"
+                                                elemento="S"
+                                                nomeElemento="Enxofre"
+                                                peso="32.06"
+                                            />
+                                            <Blocos
+                                                nAtom="34"
+                                                elemento="Se"
+                                                nomeElemento="Selênio"
+                                                peso="78.971"
+                                            />
+                                            <Blocos
+                                                nAtom="52"
+                                                elemento="Te"
+                                                nomeElemento="Telúrio"
+                                                peso="121.79"
+                                            />
+                                            <Blocos
+                                                nAtom="84"
+                                                elemento="Po"
+                                                nomeElemento="Polônio"
+                                                peso="209"
+                                            />
+                                            <Blocos
+                                                nAtom="116"
+                                                elemento="Lv"
+                                                nomeElemento="Livermorio"
+                                                peso="293"
+                                            />
+                                        </Container10>
+
+                                        <Container11>
+                                            <Blocos
+                                                nAtom="9"
+                                                elemento="F"
+                                                nomeElemento="Flúor"
+                                                peso="18.998"
+                                            />
+                                            <Blocos
+                                                nAtom="17"
+                                                elemento="Cl"
+                                                nomeElemento="Cloro"
+                                                peso="35.45"
+                                            />
+                                            <Blocos
+                                                nAtom="35"
+                                                elemento="Br"
+                                                nomeElemento="Bromo"
+                                                peso="79.904"
+                                            />
+                                            <Blocos
+                                                nAtom="53"
+                                                elemento="I"
+                                                nomeElemento="Iodo"
+                                                peso="125.50"
+                                            />
+                                            <Blocos
+                                                nAtom="85"
+                                                elemento="At"
+                                                nomeElemento="Ástato"
+                                                peso="210"
+                                            />
+                                            <Blocos
+                                                nAtom="117"
+                                                elemento="Ts"
+                                                nomeElemento="Tenesso"
+                                                peso="294"
+                                            />
+                                        </Container11>
+
+                                        <Container12>
+                                            <Blocos 
+                                                nAtom="2"
+                                                elemento="He"
+                                                nomeElemento="Hélio"
+                                                peso="4.0026"
+                                            />
+                                            <Blocos 
+                                                nAtom="10"
+                                                elemento="Ne"
+                                                nomeElemento="Neônio"
+                                                peso="20.180"
+                                            />
+                                            <Blocos 
+                                                nAtom="18"
+                                                elemento="Ar"
+                                                nomeElemento="Argônio"
+                                                peso="39.943"
+                                            />
+                                            <Blocos 
+                                                nAtom="36"
+                                                elemento="Kr"
+                                                nomeElemento="Criptônio"
+                                                peso="83.798"
+                                            />
+                                            <Blocos 
+                                                nAtom="54"
+                                                elemento="Xe"
+                                                nomeElemento="Xenênio"
+                                                peso="131.29"
+                                            />
+                                            <Blocos 
+                                                nAtom="86"
+                                                elemento="Rn"
+                                                nomeElemento="Radônio"
+                                                peso="222"
+                                            />
+                                            <Blocos 
+                                                nAtom="118"
+                                                elemento="Og"
+                                                nomeElemento="Oganessônio"
+                                                peso="294"
+                                            />
+                                        </Container12>
+
                                     </Main>
                                 } />
                         </Route>
@@ -440,6 +641,31 @@ const Container06 = styled.div`
 const Container07 = styled.div`
     margin-top: .2rem;
     grid-area: 2 / 13 / 3 / 14;
+`
+
+const Container08 = styled.div`
+    margin-top: .2rem;
+    grid-area: 2 / 14 / 3 / 15;
+`
+
+const Container09 = styled.div`
+    margin-top: .2rem;
+    grid-area: 2 / 15 / 3 / 16;
+`
+
+const Container10 = styled.div`
+    margin-top: .2rem;
+    grid-area: 2 / 16 / 3 / 17;
+`
+
+const Container11 = styled.div`
+    margin-top: .2rem;
+    grid-area: 2 / 17 / 3 / 18;
+`
+
+const Container12 = styled.div`
+    margin-top: .2rem;
+    grid-area: 1 / 18 / 8 / 19;
 `
 
 export default Ways;
