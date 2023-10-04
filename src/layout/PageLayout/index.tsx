@@ -17,6 +17,7 @@ const ContainerLayout = styled.main`
     grid-template-columns: repeat(18, 5rem);
     grid-template-rows: repeat(11, 5rem);
     gap: .2rem;
+    margin-top: 10rem;
 `
 
 export default PageLayout;
